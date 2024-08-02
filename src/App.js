@@ -26,7 +26,7 @@ function App() {
                 throw new Error("Invalid JSON format");
             }
 
-            const res = await axios.post('http://localhost:3000/bfhl', parsedInput);
+            const res = await axios.post('https://bajaj-backend-tau.vercel.app/bfhl', parsedInput);
             setResponse(res.data);
             setError('');
         } catch (err) {
